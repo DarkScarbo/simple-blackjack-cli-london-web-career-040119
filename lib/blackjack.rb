@@ -48,6 +48,14 @@ end
 
 def invalid_command
   # code invalid_command here
+  welcome
+  total = initial_round
+
+  until total >= 21 do
+    total = hit?(total)
+  end
+  end_game(total)
+
 end
 
 #####################################################
